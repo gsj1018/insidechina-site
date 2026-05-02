@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — InsideChina</title>
+  <meta name="description" content="In-depth articles about China's digital economy, e-commerce strategies, and cultural insights for Western entrepreneurs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Inside<span class="logo-accent">China</span></a>
+      <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>The InsideChina Blog</h1>
+      <p>Real insights about China's digital economy. No propaganda. No stereotypes. Just truth.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterArticles('all', this)">All</button>
+        <button class="filter-btn" onclick="filterArticles('trending', this)">Trending</button>
+        <button class="filter-btn" onclick="filterArticles('culture', this)">Culture</button>
+        <button class="filter-btn" onclick="filterArticles('business', this)">Business</button>
+        <button class="filter-btn" onclick="filterArticles('ecommerce', this)">E-Commerce</button>
+      </div>
+
+      <div class="article-grid" id="articleGrid">
+        <article class="article-card" data-category="ecommerce trending">
+          <div class="card-img" style="background: linear-gradient(135deg, #C41E3A 0%, #8B0000 100%);">
+            <span class="card-category">E-Commerce</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">May 1, 2026 &middot; 8 min read</span>
+            <h3><a href="blog/how-china-ecommerce-differs.html">How China's E-Commerce is Completely Different from the West</a></h3>
+            <p>After 8 years building in both markets, here's the brutal truth about why Western e-commerce strategies fail in China — and what actually works.</p>
+            <a href="blog/how-china-ecommerce-differs.html" class="read-more">Read Article &rarr;</a>
+          </div>
+        </article>
+        <article class="article-card" data-category="culture trending">
+          <div class="card-img" style="background: linear-gradient(135deg, #D4A843 0%, #B8860B 100%);">
+            <span class="card-category">Culture</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Apr 22, 2026 &middot; 6 min read</span>
+            <h3><a href="#">Why WeChat is Your Business's Secret Weapon (And You Don't Even Know It)</a></h3>
+            <p>Western brands keep ignoring WeChat. That's a massive mistake. Here's how to use it without being in China.</p>
+            <a href="#" class="read-more">Read Article &rarr;</a>
+          </div>
+        </article>
+        <article class="article-card" data-category="business">
+          <div class="card-img" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+            <span class="card-category">Business</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Apr 15, 2026 &middot; 7 min read</span>
+            <h3><a href="#">The Untold Story of How Chinese Sellers Actually Source Products</a></h3>
+            <p>It's not Alibaba. It's not 1688. The real supply chain runs through channels most Western entrepreneurs never discover.</p>
+            <a href="#" class="read-more">Read Article &rarr;</a>
+          </div>
+        </article>
+        <article class="article-card" data-category="business trending">
+          <div class="card-img" style="background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);">
+            <span class="card-category">Business</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Apr 8, 2026 &middot; 5 min read</span>
+            <h3><a href="#">Taobao vs. Pinduoduo: Understanding China's Fragmented E-Commerce Landscape</a></h3>
+            <p>Each platform serves a completely different demographic. Understanding this is key to any China-informed sourcing or selling strategy.</p>
+            <a href="#" class="read-more">Read Article &rarr;</a>
+          </div>
+        </article>
+        <article class="article-card" data-category="culture">
+          <div class="card-img" style="background: linear-gradient(135deg, #e07b39 0%, #c45c00 100%);">
+            <span class="card-category">Culture</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Mar 28, 2026 &middot; 9 min read</span>
+            <h3><a href="#">Guanxi: The Ancient Concept That's Still the Foundation of Chinese Business Today</a></h3>
+            <p>No book on China business is complete without it. But guanxi is misunderstood by most Westerners. Here's what it really means.</p>
+            <a href="#" class="read-more">Read Article &rarr;</a>
+          </div>
+        </article>
+        <article class="article-card" data-category="ecommerce">
+          <div class="card-img" style="background: linear-gradient(135deg, #6c5ce7 0%, #4834d4 100%);">
+            <span class="card-category">E-Commerce</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Mar 15, 2026 &middot; 6 min read</span>
+            <h3><a href="#">How Chinese Live-Stream E-Commerce Makes Western Influencer Marketing Look Primitive</a></h3>
+            <p>$500 billion in live-stream sales in 2024 alone. The strategies these streamers use would blow your mind — and your conversion rates.</p>
+            <a href="#" class="read-more">Read Article &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section newsletter dark">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-text">
+          <h2>Get Weekly China Intel</h2>
+          <p>Join 2,400+ Western entrepreneurs. One email per week. No fluff.</p>
+        </div>
+        <div class="newsletter-form-wrap">
+          <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+            <input type="email" id="emailInput" placeholder="your@email.com" required>
+            <button type="submit" class="btn btn-primary">Subscribe Free</button>
+          </form>
+          <div id="formSuccess" style="display:none;" class="form-success">
+            &#x1F389; You're in! Check your inbox.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Inside<span class="logo-accent">China</span></div>
+          <p>The no-BS guide to China's digital economy for Western entrepreneurs.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 InsideChina. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

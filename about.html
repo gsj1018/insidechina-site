@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — InsideChina</title>
+  <meta name="description" content="About InsideChina — the story behind the site and the person sharing China's digital economy secrets with Western entrepreneurs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Inside<span class="logo-accent">China</span></a>
+      <button class="mobile-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>About InsideChina</h1>
+      <p>The story, the mission, and the person behind the insights.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-image">
+          <div class="about-avatar">GS</div>
+          <div class="about-social">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>Hi, I'm gsj1018</h2>
+          <p>I'm a former used car e-commerce entrepreneur who spent years building businesses across both Chinese and Western markets. After watching too many Western entrepreneurs stumble over cultural misunderstandings, misinformation, and missed opportunities in China, I decided to write about what I actually learned.</p>
+
+          <h3>Why InsideChina?</h3>
+          <p>Western media covers China in two modes: either fear-and-scare stories or surface-level "here's how to make money in China" fluff. What I needed — and couldn't find — was honest, practical, nuanced information from someone who'd actually done the work.</p>
+          <p>InsideChina is that resource. I write about China's digital economy with the clarity and candor I wish I'd had when I started. No agenda, no government angle, no cultural stereotypes — just what works and what doesn't.</p>
+
+          <h3>What You Can Expect</h3>
+          <ul>
+            <li><strong>Real experience</strong> — I've built and shipped products across both markets</li>
+            <li><strong>Western perspective</strong> — I explain China to an audience that thinks differently, not to Chinese readers</li>
+            <li><strong>Actionable insights</strong> — Every article should leave you with something you can actually use</li>
+            <li><strong>Honest takes</strong> — I'll tell you what sucks about China's market, not just the upside</li>
+          </ul>
+
+          <h3>The Business Model</h3>
+          <p>InsideChina is self-funded and growing. Revenue comes from affiliate commissions (I recommend tools and platforms I actually use), digital products (guides and reports), and eventually brand partnerships. The blog content is always free — my paid products are for people who want the deep-dive version.</p>
+
+          <h3>Get in Touch</h3>
+          <p>Have a question, want to collaborate, or spotted something I got wrong? The best way to reach me is through <a href="mailto:gsj1018@proton.me">email</a>. I read everything and respond when I can.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section newsletter dark">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-text">
+          <h2>Join the Newsletter</h2>
+          <p>2,400+ Western entrepreneurs already get weekly China insights. Don't miss the next issue.</p>
+        </div>
+        <div class="newsletter-form-wrap">
+          <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+            <input type="email" id="emailInput" placeholder="your@email.com" required>
+            <button type="submit" class="btn btn-primary">Subscribe Free</button>
+          </form>
+          <div id="formSuccess" style="display:none;" class="form-success">
+            &#x1F389; You're in!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 InsideChina. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
